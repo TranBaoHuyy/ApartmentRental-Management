@@ -1,0 +1,4 @@
+sau tết cần làm:
+1. Làm quên mật khẩu gửi mail
+2. Bắt regex số điện thoại, mail, số lượng chữ cái của mật khẩu, user, name ,....
+3. Xử lý lỗi in lặp lại khi in

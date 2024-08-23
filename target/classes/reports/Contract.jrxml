@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.0.final using JasperReports Library version 6.21.0-4f56c4f36cd19e17675219a9ac4692d5f0f13b06  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="950" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f920add1-425e-4106-be03-53ecc52228fd">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="printDate" class="java.lang.String"/>
+	<parameter name="householdHeadName" class="java.lang.String"/>
+	<parameter name="idNumber" class="java.lang.String"/>
+	<parameter name="phoneNumber" class="java.lang.String"/>
+	<parameter name="memberQuantity" class="java.lang.String"/>
+	<parameter name="contractNumber" class="java.lang.String"/>
+	<parameter name="startDate" class="java.lang.String"/>
+	<parameter name="endDate" class="java.lang.String"/>
+	<parameter name="price" class="java.lang.String"/>
+	<parameter name="staffName" class="java.lang.String"/>
+	<parameter name="staffId" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<detail>
+		<band height="792" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="48" width="550" height="38" uuid="55cae174-e0c4-4e5b-b99b-b15c640a9bbf"/>
+				<textElement verticalAlignment="Top">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["This Residential Lease Agreement (the \"Agreement\") is entered into on " + $P{printDate} + ", by and between:"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="109" width="551" height="38" uuid="57129986-7f81-417b-8198-c0c5ced95986"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Full Name: Tran Van A
+Address : D5, Binh Thanh, HCM]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="171" width="551" height="18" uuid="c32ae4c9-edfe-4ad9-84dc-a7b244ccd5f2"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Full Name: " + $P{householdHeadName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="192" width="551" height="18" uuid="140d8296-8b29-44fd-ade5-2d246cfba0fd"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["ID Number: " + $P{idNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="235" width="551" height="18" uuid="f1a0044d-4c98-4786-a1d2-7f824af02b55"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Number of Household Members: " + $P{memberQuantity}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="214" width="551" height="18" uuid="5fa844f4-0b25-4101-9e63-5c1bb79397ba"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Phone Number: " + $P{phoneNumber}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="261" width="551" height="27" uuid="ffd14a85-039d-4dc8-a9ac-6ebebd628a14"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true" isItalic="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[1. PROPERTY:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="144" width="551" height="27" uuid="fe56a977-b5f3-464b-8fdc-5a5d28ae3d57"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[TENANT:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="82" width="551" height="27" uuid="668c324e-2928-4da4-a866-17cd7b9a75e5"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[LANDLORD:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="290" width="551" height="44" uuid="db56ab7e-3bdb-4025-8313-5442e4d0780c"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[The Landlord agrees to lease the residential property located at d5, Binh Thanh, HCM (the "Property") to the Tenant for the term of this Agreement.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="326" width="551" height="27" uuid="be392453-9100-4b3a-b409-c85afeefbee5"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true" isItalic="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[2. LEASE DETAILS:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="356" width="551" height="24" uuid="384eca63-f375-4ae1-b196-658961a935c2"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Contract Number: " + $P{contractNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="378" width="551" height="24" uuid="7b5f14bb-b1dd-4c27-ad5b-baba5b633ba6"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Lease Term: " + $P{startDate} + " to " + $P{endDate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="396" width="551" height="27" uuid="70671b0c-f537-454b-a0d7-16b9babd26a6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true" isItalic="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[3. RENT:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="426" width="551" height="47" uuid="2a2a80e6-ddce-4087-a9c2-84a916395750"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["The Tenant agrees to pay monthly rent of " + $P{price} + "on the 1st day of the month. Payment shall be made in cash or bank transfer."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="463" width="551" height="27" uuid="261f8d68-46a0-4f7b-b0c7-26d4f024b3a7"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true" isItalic="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[4. SECURITY DEPOSIT:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="494" width="551" height="36" uuid="ec9c301b-63aa-44ba-97d2-690c90d6ba35"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["A security deposit of " + $P{price} + " is due upon signing this Agreement. The deposit will be returned within 5 days after the termination of the lease, less any deductions for damages or unpaid rent."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="562" width="551" height="44" uuid="b83b6c22-c85c-43ad-8152-a5b965ed54d7"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[The Tenant is responsible for all utilities, including but not limited to water, gas, electricity, cable, and internet, unless otherwise specified in writing.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="532" width="551" height="27" uuid="11f84344-965e-4a5c-9604-a4072e1969a4"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true" isItalic="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[5. UTILITIES:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="607" width="551" height="27" uuid="ccac03de-c78b-4b47-bdf9-05e54e7b12b3"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true" isItalic="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[6. EMPLOYEE REPRESENTATIVE:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="636" width="551" height="20" uuid="66bf1760-b293-4e6b-bf0a-a80b73d7d1d3"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Landlord's Representative (Employee):]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="656" width="551" height="24" uuid="d3d32754-33c9-4206-92c6-3ee976d35164"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Employee ID: " + $P{staffId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="678" width="551" height="24" uuid="3ecedc5a-0625-487f-8a06-e6881543e63b"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Staff Name: " + $P{staffName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="60" y="703" width="110" height="27" uuid="8d024ce8-ea10-4fbd-9c1b-7c463d58acf2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[LANDLORD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="703" width="110" height="27" uuid="bc0c6073-cb06-4901-8b99-c57449560c64"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[TENANT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="10" width="551" height="27" uuid="52349bcc-f651-464a-b5dd-2209a87c73f5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[RESIDENTIAL LEASE AGREEMENT]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>
